@@ -55,6 +55,7 @@ body {
     background: #a9def9; 
     outline: none; 
     opacity: 0.7; 
+    border-radius: 25px;
     -webkit-transition: .2s; 
     transition: opacity .2s;
 }
@@ -70,6 +71,7 @@ body {
     height: 25px; 
     background: #ff99c8; 
     cursor: pointer; 
+    border-radius: 50%;
   }
   
   .slider::-moz-range-thumb {
@@ -77,6 +79,7 @@ body {
     height: 25px;
     background: #ff99c8;
     cursor: pointer; 
+    border-radius: 50%;
   }
   #choseColour{
     border: none;
