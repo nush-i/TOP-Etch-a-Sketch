@@ -21,7 +21,7 @@ picker.oninput = function() {
 const container = document.querySelector('.grid-container');
 function createGridItems(){
     const gridSize = slider.value;
-    const containerSize = 400;
+    const containerSize = container.clientWidth//400
     const itemSize = containerSize/gridSize;
     container.innerHTML = '';
     for (let i=0; i< gridSize * gridSize; i++){
@@ -32,6 +32,8 @@ function createGridItems(){
         container.appendChild(div);
     }
 }
+
+window.addEventListener('resize', createGridItems);
 
 
 let isMouseDown = false;

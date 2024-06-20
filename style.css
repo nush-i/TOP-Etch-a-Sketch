@@ -148,8 +148,6 @@ footer{
 }
 
 .grid-item{
-    /* width: 25px;
-    height: 25px; */
     box-sizing: border-box;
     border: 1px solid #ff97b7;
 }
@@ -158,9 +156,18 @@ footer{
 .second-container{
     display: flex;
     justify-content: space-around;
-    gap:10px;
+    gap:60px;
 }
 
 .hide-grid-lines .grid-item{
     border: transparent;
+}
+
+@media (max-width: 600px) {
+    .grid-container{
+        width: 200px;
+        height: 200px;
+    }
+
+    
 }
