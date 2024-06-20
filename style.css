@@ -1,0 +1,132 @@
+.header-title{
+    background-color: #BDE0FE;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    /* font-family: ; */
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+  
+  }
+
+  .second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8edeb;
+    color: #023e8a;
+    padding: 0 0 50px 0;;
+}
+
+.colour-choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid-choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%; 
+    height: 25px;
+    background: #a9def9; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1; 
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    background: #ff99c8; 
+    cursor: pointer; 
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; 
+    height: 25px;
+    background: #ff99c8;
+    cursor: pointer; 
+  }
+  #choseColour{
+    border: none;
+    width: 100px;
+    height: 40px;
+  }
+
+.clearAll , .gridLine {
+    background-color:#a9def9;
+    color: #03045e;
+    border: none;
+    height: 200%;
+    width: 150%;
+    opacity: 0.8; 
+}
+
+.clearAll:hover, .gridLine:hover {
+    opacity: 1; 
+  }
+
+#choseColour{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    appearance: none;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+}
+
+#choseColour::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#choseColour::-webkit-color-swatch {
+    border: none;
+    border-radius: 5px;
+}
+
+#choseColour::-moz-color-swatch {
+    border: none;
+    border-radius: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BDE0FE;
+  }

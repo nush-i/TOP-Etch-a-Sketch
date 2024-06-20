@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nushi's Etch-a-Sketch 🎨</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="first-container">
+        <div class="header-title">
+            <p>ETCH-A-SKETCH</p>
+        </div>
+    </div>
+    <div class="second-container">
+        <div class="choices">
+            <div class="colour-choice">
+                <p>Chose a colour:</p>
+                <input type="color" class="picker"  id="choseColour">
+                <p id="chosen-colour"></p>
+            </div>
+            <div class="grid-choice">
+                <p>Chose grid size:</p>
+                <input type="range" min="1" max="16" value="8" class="slider" id="choseGrid">
+                <p id="chosen-size">8 x 8</p>
+            </div>
+            <button class="clearAll">Clear All</button>
+            <button class="gridLine">Toggle Grid Lines</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p>Nushi's Etch-a-Sketch 🎨 Webpage</p>
+      </footer>
+  </body>
+</html>
