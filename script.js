@@ -15,9 +15,34 @@ picker.oninput = function() {
 }
 
 
+
 const container = document.querySelector('.grid-container');
 for (let i=0; i<16 *16; i++){
     const div = document.createElement('div');
     div.classList.add('grid-item');
     container.appendChild(div);
 }
+
+const gridItems = document.querySelectorAll('.grid-item');
+gridItems.forEach(gridItem=>{
+    gridItem.addEventListener('click',()=>{
+        const chosenColour =picker.value;
+        gridItem.style.backgroundColor = chosenColour;
+
+    })
+})
+
+const clearAll = document.querySelector('.clearAll');
+clearAll.addEventListener('click', () =>{
+    const gridItems = document.querySelectorAll('.grid-item');
+    gridItems.forEach(gridItem=>{
+        gridItem.style.backgroundColor = 'transparent';
+    });
+});
+
+const toggleGridLines = document.querySelector('.gridLine');
+toggleGridLines.addEventListener('click', () => {
+    const gridContainer = document.querySelector('.grid-container');
+    gridContainer.classList.toggle('hide-grid-lines');
+});
+
