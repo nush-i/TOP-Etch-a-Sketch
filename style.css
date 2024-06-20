@@ -45,6 +45,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-left: 100px;
 }
 
 .slider{
@@ -91,9 +92,10 @@ body {
     background-color:#a9def9;
     color: #03045e;
     border: none;
-    height: 200%;
+    height:28px;
     width: 150%;
     opacity: 0.8; 
+    border-radius: 15px;
 }
 
 .clearAll:hover, .gridLine:hover {
@@ -133,3 +135,26 @@ footer{
     align-items: center;
     background-color: #BDE0FE;
   }
+
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ff97b7;
+    margin-right: 100px;
+
+}
+
+.grid-item{
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1px solid #ff97b7;
+}
+
+.second-container{
+    display: flex;
+    justify-content: space-around;
+    gap:10px;
+}
